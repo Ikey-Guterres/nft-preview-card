@@ -6,29 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
     <title>NFT Preview Card</title>
 </head>
 
 <body>
-    <main class="container-principal">
-        <figure>
-            <img src="assets/img/image-equilibrium.jpg" alt="Cubo equilibrado em uma das vértices">
-        </figure>
+
+    <main class="container-card">
+        <div class="container-overlay">
+
+            
+            
+            <a href="#">
+                <figure class="figure">
+                    <img class="img " src="assets/img/image-equilibrium.jpg" alt="Cubo equilibrado em uma das vértices">
+                    <div class="overlay">
+                        <img class="img-eye" src="assets/img/icon-view.svg" alt="">
+                    </div>
+                </figure>
+            </a>
+        </div>
         <section>
-            <h1>Equilibrium #3429</h1>
-            <p>Our Equilibrium collection promotes balance and calm.</p>
+            <a href="#">
+                <h1 class="title">Equilibrium #3429</h1>
+            </a>
+            <p class="p-description">Our Equilibrium collection promotes balance and calm.</p>
         </section>
         <div class="info">
-            <figure><img src="assets/img/icon-ethereum.svg" alt="logo ethereum"></figure><p>0.041 ETH</p>
-            <img src="assets/img/icon-clock.svg" alt="ícone de relógio">
-            <time datetime="2023-01-13">3 days left</time>
+            <div class="container-info">
+                <figure><img class="logo-nft" src="assets/img/icon-ethereum.svg" alt="logo ethereum"></figure>
+                <p class="p-value-nft">0.041 ETH</p>
+            </div>
+            <span class="container-info">
+                <img class="icon-clock" src="assets/img/icon-clock.svg" alt="ícone de relógio">
+                <time class="time" datetime="2023-01-13">3 days left</time>
+            </span>
         </div>
         <hr class="separador-1">
-        <section class="profile">
+        <div class="profile">
             <img class="img-profile" src="assets/img/image-avatar.png" alt="perfil do autor do artigo">
-            <a class="name-author" href="#">Jules Wyvern</a>
-        </section>
+            <p>Creation of <a class="name-author" href="#">Jules Wyvern</a></p>
+        </div>
     </main>
 </body>
 
